@@ -1,0 +1,29 @@
+.main_nav {
+    width: 100%;
+    height: auto;
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        background-color: #2C3333;
+
+        
+        div {
+            margin: 2.5vh 3vw;
+        }
+        
+        div a {
+            text-decoration: none;
+            text-align: center;
+            color: #CBE4DE;
+            padding: 1.5vh 0;
+        }
+
+        div a:hover {
+            color: white;
+        }
+    }
+}

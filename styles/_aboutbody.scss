@@ -1,0 +1,70 @@
+.about_body_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .about_body_content {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 8vh 0 10.5vh 0;
+        padding: 0;
+        background-color: #393E46;
+        border-radius: 2%;
+        height: auto;
+        width: auto;
+        box-shadow: 3.5px 3px 2.5px #2C3333;
+
+        .about_img_container {
+            width: 30vw;
+            height: 73.5vh;
+            background-image: url('images/gradientback.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            isolation: isolate;
+
+                .about_img {
+                    border-radius: 2% 0 0 2%;
+                    border: solid 1px #2C3333;
+                    width: 30vw;
+                    height: 73.5vh;
+                    box-shadow: 3px 1.5px 2.5px #2C3333;
+                    background-size: cover;
+                    background-image: url('images/myprofile.png');
+                    background-position: center;
+                }
+        }
+
+        .about_img_container::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            inset: 0;
+            background-color: #CBE4DE;
+            opacity: 0.3;
+        }
+
+        .about_text_container {
+            width: 50vw;
+            height: 73.5vh;
+            color: #CBE4DE;
+            display: flex;
+            flex-direction: column;
+
+            h1{
+                margin-top: 5%;
+                text-align: center;
+            }
+
+            h4 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                margin: 0 5% 0 5%;
+            }
+        }
+    }
+}

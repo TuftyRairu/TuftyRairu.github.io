@@ -1,0 +1,212 @@
+.main_nav {
+  width: 100%;
+  height: auto;
+}
+.main_nav .container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  background-color: #2C3333;
+}
+.main_nav .container div {
+  margin: 2.5vh 3vw;
+}
+.main_nav .container div a {
+  text-decoration: none;
+  text-align: center;
+  color: #CBE4DE;
+  padding: 1.5vh 0;
+}
+.main_nav .container div a:hover {
+  color: white;
+}
+
+.body_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.body_container .body_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 13vh 0 11.5vh 0;
+  padding: 0;
+  background-color: #393E46;
+  border-radius: 2%;
+  height: auto;
+  width: auto;
+  box-shadow: 3.5px 3px 2.5px #2C3333;
+}
+.body_container .body_content .top {
+  width: 43vw;
+  height: 33.5vh;
+  display: flex;
+  justify-content: center;
+}
+.body_container .body_content .top .image {
+  border: solid 1px #2C3333;
+  margin-top: 4vh;
+  margin-left: 1vw;
+  width: 14vw;
+  height: 30vh;
+  border-radius: 50%;
+  box-shadow: 3px 1.5px 2.5px #2C3333;
+  background-size: cover;
+  background-image: url("images/profile.jpg");
+  background-position: center;
+}
+.body_container .body_content .bottom {
+  width: 43vw;
+  height: 33.5vh;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.body_container .body_content .bottom .txt_info {
+  text-align: center;
+  color: #CBE4DE;
+}
+.body_container .body_content .bottom .logos {
+  background-color: #CBE4DE;
+  border-radius: 100px;
+  width: 9vw;
+  margin-left: 15vw;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.body_container .body_content .bottom .logos a {
+  margin: 0 0.5vw;
+}
+.body_container .body_content .bottom .logos a .icon {
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+  background-size: cover;
+  margin-top: 0.5vh;
+}
+.body_container .body_content .bottom .logos a .facebook_icon {
+  background-image: url("images/facebook.svg");
+  position: relative;
+  isolation: isolate;
+}
+.body_container .body_content .bottom .logos a .facebook_icon:hover,
+.body_container .body_content .bottom .logos a .facebook_icon:focus {
+  background-image: url("images/facebook_after.svg");
+}
+.body_container .body_content .bottom .logos a .youtube_icon {
+  background-image: url("images/youtube.svg");
+  position: relative;
+  isolation: isolate;
+}
+.body_container .body_content .bottom .logos a .youtube_icon:hover,
+.body_container .body_content .bottom .logos a .youtube_icon:focus {
+  background-image: url("images/youtube_after.svg");
+}
+.body_container .body_content .bottom .logos a .github_icon {
+  background-image: url("images/github.svg");
+  position: relative;
+  isolation: isolate;
+}
+.body_container .body_content .bottom .logos a .github_icon:hover,
+.body_container .body_content .bottom .logos a .github_icon:focus {
+  background-image: url("images/github_after.svg");
+}
+
+.about_body_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.about_body_container .about_body_content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 8vh 0 10.5vh 0;
+  padding: 0;
+  background-color: #393E46;
+  border-radius: 2%;
+  height: auto;
+  width: auto;
+  box-shadow: 3.5px 3px 2.5px #2C3333;
+}
+.about_body_container .about_body_content .about_img_container {
+  width: 30vw;
+  height: 73.5vh;
+  background-image: url("images/gradientback.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  isolation: isolate;
+}
+.about_body_container .about_body_content .about_img_container .about_img {
+  border-radius: 2% 0 0 2%;
+  border: solid 1px #2C3333;
+  width: 30vw;
+  height: 73.5vh;
+  box-shadow: 3px 1.5px 2.5px #2C3333;
+  background-size: cover;
+  background-image: url("images/myprofile.png");
+  background-position: center;
+}
+.about_body_container .about_body_content .about_img_container::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-color: #CBE4DE;
+  opacity: 0.3;
+}
+.about_body_container .about_body_content .about_text_container {
+  width: 50vw;
+  height: 73.5vh;
+  color: #CBE4DE;
+  display: flex;
+  flex-direction: column;
+}
+.about_body_container .about_body_content .about_text_container h1 {
+  margin-top: 5%;
+  text-align: center;
+}
+.about_body_container .about_body_content .about_text_container h4 {
+  text-align: center;
+}
+.about_body_container .about_body_content .about_text_container p {
+  text-align: center;
+  margin: 0 5% 0 5%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #2E4F4F;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  isolation: isolate;
+  height: 100vh;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: #CBE4DE;
+  opacity: 0.2;
+}/*# sourceMappingURL=styles.css.map */
